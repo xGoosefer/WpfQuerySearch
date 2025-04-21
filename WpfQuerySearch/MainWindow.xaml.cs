@@ -21,16 +21,19 @@ namespace WpfQuerySearch
     /// </summary>
     public partial class MainWindow : Window
     {
+        #region Properties
         string[] monsters ={"Abaia","Almas","Aqrabuamelu","Baba Yaga","Bakunawa","Banshee","Basilisk","Beast of Gévaudan","Behemoth","Bigfoot","Bogeyman","Centaur","Cerberus","Changeling","Charybdis","Chimera","Chupacabra","Cryptozoology","Cthulhu","Cyclopes","Cetus","Cockatrice","Demogorgon","Demon","Devil","Draugr","Dragon","Dr. Jekyll and Mr. Hyde","Elemental","Piranha","Shark","Elf","Extraterrestrial life","Familiar","Fairy","Frankenstein","Gargoyle","Gashadokuro","Giant","Goblin","Ghoul","Ghost","Gorgon","Gremlin","Griffin","Grim Reaper","Gnome","Headless Horseman","Horned Serpent","Halfling","Hobgoblin","Imp","Invisible Stalker","Hydra","Jiangshi","Jinn","Kaiju","Kappa","Kelpie","Kraken","Krampus","Kobold","Loch Ness monster","Leprechaun","Leviathan","Lich","Manananggal","Manticore","Mapinguari","Merfolk","Mermaid","Midgard Serpent","Mind Flayer","Minokawa","Minotaur","Mothman","Merman","Mutant","Mummy","Nymphs","Ogre","Oni","Orc","Pontianak","Scylla","Sea Serpent","Slime","Siren","Skin-walker","Skeleton","Slenderman","Spirit","Tengu","Therianthropes","Tiamat","Troll","Tikbalang","Typhon","Unicorn","Vampire","Vecna","Virtue","Warg","Wendigo","Werecats","Werehyena","Werewolf","Witch","Yaksha","Yamata no Orochi","Yaoguai","Yeti","Yokai","Yowie","Yara-ma-yha-who","Zombie "};
 
         IEnumerable<string> query;
         TextInfo culturalAdapt = new CultureInfo("en-US", false).TextInfo;
         bool light = false;
+
+        #endregion
         public MainWindow()
         {
             InitializeComponent();
         }
-
+        #region Methods
         private string defaultQueryResult()
         {
             query = from monster in monsters orderby monster select monster;
@@ -142,5 +145,6 @@ namespace WpfQuerySearch
             light = !light;
             showLight();
         }
+        #endregion
     }
 }

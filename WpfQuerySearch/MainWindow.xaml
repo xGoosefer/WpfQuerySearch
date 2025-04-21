@@ -5,9 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfQuerySearch"
         mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
         Title="MainWindow" Height="450" Width="800">
     <Grid Loaded="Grid_Loaded">
-        <ScrollViewer Width="300" Margin="31,25,489,34" VerticalScrollBarVisibility="Hidden">
+        <ScrollViewer  Margin="31,25,489,34" VerticalScrollBarVisibility="Auto">
             <TextBlock x:Name="OutputTxtBlck" HorizontalAlignment="Left" Margin="53,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="321" Width="239"/>
         </ScrollViewer>
         <TextBox x:Name="InputTxtBlck" HorizontalAlignment="Left" Margin="378,45,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
