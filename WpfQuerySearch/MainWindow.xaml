@@ -1,0 +1,25 @@
+﻿<Window x:Class="WpfQuerySearch.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfQuerySearch"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Loaded="Grid_Loaded">
+        <ScrollViewer Width="300" Margin="31,25,489,34" VerticalScrollBarVisibility="Hidden">
+            <TextBlock x:Name="OutputTxtBlck" HorizontalAlignment="Left" Margin="53,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="321" Width="239"/>
+        </ScrollViewer>
+        <TextBox x:Name="InputTxtBlck" HorizontalAlignment="Left" Margin="378,45,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="SubmitBtn" Content="Search" HorizontalAlignment="Left" Margin="607,45,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.41,0.086" Click="SubmitBtn_Click"/>
+        <Label x:Name="SearchLbl" Content="Search" HorizontalAlignment="Left" Margin="378,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.004,-1.389" Height="30"/>
+        <Button x:Name="TitleCaseBtn" Content="Button" HorizontalAlignment="Left" Margin="378,98,0,0" VerticalAlignment="Top" Height="24" Width="120" Click="TitleCaseBtn_Click"/>
+        <Button x:Name="ResetBtn" Content="Button" HorizontalAlignment="Left" Margin="418,363,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.202,1.871" Height="37" Width="121" Click="ResetBtn_Click"/>
+        <Button x:Name="SearchLength" Content="Descending Order" HorizontalAlignment="Left" Margin="378,151,0,0" VerticalAlignment="Top" Height="30" Width="120" Click="SearchLength_Click"/>
+        <Button x:Name="LengthBtn" Content="By Length" HorizontalAlignment="Left" Margin="378,217,0,0" VerticalAlignment="Top" Height="24" Width="120" Click="LengthBtn_Click"/>
+        <Rectangle x:Name="LightSource" HorizontalAlignment="Left" Height="62" Margin="607,81,0,0" Stroke="Black" VerticalAlignment="Top" Width="62" Fill="#FFD6D036"/>
+        <Button x:Name="LightToggleBtn" Content="On" HorizontalAlignment="Left" Margin="701,98,0,0" VerticalAlignment="Top" Height="24" Width="50" Click="LightToggleBtn_Click"/>
+
+
+    </Grid>
+</Window>
